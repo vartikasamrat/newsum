@@ -8,7 +8,7 @@ import ManagerDashboard from "./pages/ManagerDashboard";
 import TeamExpenses from "./pages/TeamExpenses";  // New page for team expenses
 import Reports from "./pages/Reports";
 import Analytics from "./pages/Analytics";
-import ManagerExpenses from "./pages/ManagerExpenses";
+// import ManagerExpenses from "./pages/ManagerExpenses";
 import Approvals from "./pages/Approvals";
 import ManagerNewExpense from "./pages/ManagerNewExpense";
 
