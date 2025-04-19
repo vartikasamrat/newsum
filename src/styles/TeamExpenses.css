@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+.team-expenses-container {
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  background-color: #fdf8ef;
+  min-height: 100vh;
+}
+
+.team-expenses-heading {
+  font-size: 2rem;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+.team-expenses-para {
+  color: #555;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.expenses-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Default button colors */
+.all-btn {
+  background-color: #3498db;
+  color: white;
+}
+.approved-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+.pending-btn {
+  background-color: #f1c40f;
+  color: white;
+}
+.rejected-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Hover styles */
+.all-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.approved-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.pending-btn:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.rejected-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.expense-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.expense-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.expense-info {
+  flex-grow: 1;
+}
+
+.expense-info h4 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.expense-info p {
+  margin: 2px 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.amount {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.expense-meta {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.status-approved {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.expense-details {
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0;
+}
+
+.expense-item.expanded .expense-details {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
